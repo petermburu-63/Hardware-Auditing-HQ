@@ -33,5 +33,5 @@ To apply industry-standard InfoSec frameworks to consumer and enterprise hardwar
 
 > **Disclaimer:** All audits, reconnaissance, and stress testing conducted within this repository are performed strictly for educational purposes in alignment with my Information Technology/Cybersecurity coursework. 
 
-**Lead Auditor:** [peter mburu / 0758437385]  
+**Lead Auditor:** [peter mburu ]  
 **Status:** `OPERATIONAL`
