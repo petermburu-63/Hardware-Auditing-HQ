@@ -1,0 +1,19 @@
+=== SYSTEM METRICS ===
+OS: Ubuntu 24.04 LTS (Noble Numbat)
+Kernel: 6.8.0-31-generic
+Service: nginx/1.24.0 (Ubuntu)
+
+=== RAW JOURNALCTL & NGINX ERROR LOGS ===
+2026-09-01T14:22:10.104921+03:00 ubuntu-audit-server nginx[8102]: 2026/09/01 14:22:10 [warn] 8102#8102: *1421 limiting requests, excess: 10.420 by zone "api_limit", client: 198.51.100.22, server: api.internal, request: "POST /v1/auth/token HTTP/1.1", host: "api.internal"
+2026-09-01T14:22:10.890123+03:00 ubuntu-audit-server nginx[8102]: 2026/09/01 14:22:10 [error] 8102#8102: *1422 upstream sent too big header while reading response header from upstream, client: 198.51.100.22, server: api.internal, request: "GET /v1/telemetry HTTP/1.1", upstream: "http://127.0.0.1:8080/v1/telemetry", host: "api.internal"
+2026-09-01T14:22:11.002411+03:00 ubuntu-audit-server nginx[8102]: 2026/09/01 14:22:11 [error] 8102#8102: *1425 connect() failed (111: Connection refused) while connecting to upstream, client: 198.51.100.89, server: api.internal, request: "GET /health HTTP/1.1", upstream: "http://127.0.0.1:8080/health", host: "api.internal"
+
+=== NGINX STATUS & PROCESS METRICS ===
+$ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+$ curl -I http://127.0.0.1/v1/auth/token
+HTTP/1.1 503 Service Temporarily Unavailable
+Server: nginx/1.24.0 (Ubuntu)
+X-Audit-Flag: RATE_LIMITED
