@@ -1,0 +1,17 @@
+=== SYSTEM ARCHITECTURE ===
+OS: Ubuntu 24.04 LTS (Noble Numbat)
+Database: PostgreSQL 16.2 (Ubuntu 16.2-1.pgdg24.04+1)
+Security: Auth0 Apollo Identity Middleware integration[cite: 1]
+
+=== RAW POSTGRES & KERNEL TELEMETRY ===
+2026-09-01 18:11:02.391 EAT [12409] LOG:  could not receive data from client: Connection reset by peer
+2026-09-01 18:11:02.402 EAT [12415] FATAL:  sorry, too many clients already
+2026-09-01 18:11:02.402 EAT [12415] DETAIL:  There are 100 active connections, which matches max_connections.
+2026-09-01 18:11:03.011 EAT [12420] WARNING:  canceling authentication due to backend crash
+Sep 01 18:11:03 ubuntu-audit-server kernel: [12044.882101] TCP: request_sock_TCP: Possible SYN flooding on port 5432. Sending cookies.  Check SNMP counters.
+
+=== SOCKET AUDIT METRICS ===
+$ ss -tulpn | grep 5432
+tcp   LISTEN 0      128        0.0.0.0:5432       0.0.0.0:*    users:(("postgres",pid=12001,fd=7))
+$ netstat -an | grep 5432 | grep ESTABLISHED | wc -l
+100
