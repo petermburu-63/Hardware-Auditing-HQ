@@ -1,0 +1,7 @@
+scapy
+paramiko
+requests
+pandas
+scikit-learn
+joblib
+cryptography
