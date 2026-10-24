@@ -1,27 +1,25 @@
-# Defense Projects
+# Offense Projects
 
-This section covers protective and monitoring techniques used to detect suspicious activity, misconfiguration, tampering, and unauthorized access.
+This section models the discovery and reconnaissance side of cybersecurity.
 
 ## What this category teaches
 
-- how to watch logs for failed login patterns
-- how to detect file tampering with integrity baselines
-- how to detect suspicious activity using correlation logic
-- how to deceive attackers with controlled decoy systems
-- how to protect sensitive files with modern encryption
+- how systems expose services on the network
+- how traffic and banners reveal software versions
+- how attackers enumerate targets before deciding where to look
+- how password hashes and common weak signals can be tested in a controlled, legitimate context
 
 ## Included topics
 
-- HIDS and brute-force detection
-- File integrity monitoring
-- Honeypot deployments
-- SIEM-style event correlation
-- Encrypted vaults
+- Port scanning
+- Packet analysis
+- Hash cracking exercises
+- Vulnerability lookup and banner-based matching
 
 ## Why it matters
 
-Modern security is not just about blocking attacks. It is also about noticing suspicious behavior quickly, protecting critical assets, and making malicious activity visible before it becomes a serious breach.
+Real attackers almost always begin with discovery. They look for exposed ports, running software, weak versions, and gaps in configuration. This category teaches those first steps in the same spirit used by security researchers and defenders.
 
 ## Safety reminder
 
-Run these tools only in isolated or controlled environments where you are intentionally testing your own systems and data.
+Only run these tools against systems you own or are explicitly authorized to assess.

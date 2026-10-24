@@ -1,21 +1,27 @@
-# Docs and Explanations
+# Defense Projects
 
-This folder holds the plain-English walkthroughs behind each project.
+This section covers protective and monitoring techniques used to detect suspicious activity, misconfiguration, tampering, and unauthorized access.
 
-## Goal
+## What this category teaches
 
-These documents explain:
-- what the project is
-- why it matters
-- how it works
-- where it is safe to practice
+- how to watch logs for failed login patterns
+- how to detect file tampering with integrity baselines
+- how to detect suspicious activity using correlation logic
+- how to deceive attackers with controlled decoy systems
+- how to protect sensitive files with modern encryption
 
-## Use these docs as a companion guide
+## Included topics
 
-Each project doc is meant to make the code easier to understand, especially for readers who are not already deep into cybersecurity.
+- HIDS and brute-force detection
+- File integrity monitoring
+- Honeypot deployments
+- SIEM-style event correlation
+- Encrypted vaults
 
-## Suggested reading flow
+## Why it matters
 
-- Start with the project-specific summary.
-- Then read the matching code.
-- Finally, try the exercise in a lab or local VM.
+Modern security is not just about blocking attacks. It is also about noticing suspicious behavior quickly, protecting critical assets, and making malicious activity visible before it becomes a serious breach.
+
+## Safety reminder
+
+Run these tools only in isolated or controlled environments where you are intentionally testing your own systems and data.
