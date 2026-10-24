@@ -1,37 +1,72 @@
 # Hardware-Audit-HQ
 
-### 🛠️ Security Architecture & Hardware Reconnaissance Lab
+A practical lab for auditing hardware, software posture, telemetry exposure, and system hardening across consumer and enterprise devices.
 
-Welcome to the central repository for my IT auditing and hardware security research. This environment is dedicated to mapping system internals, conducting vulnerability assessments on mobile/enterprise firmware, and establishing secure configuration baselines.
+This repository is built around one idea: if a device is going to be trusted in a real environment, it should be measured, documented, and tested with a critical eye.
 
----
+I use this space to document device reconnaissance, performance behavior, thermal characteristics, firmware posture, telemetry risk, and hardening opportunities. The goal is to move beyond marketing specs and look at what the hardware and operating system are actually doing.
 
-## 🎯 Objective
-To apply industry-standard InfoSec frameworks to consumer and enterprise hardware, analyzing physical and software layers for architectural integrity, thermal exploitation vectors, and system hardening opportunities.
+## What this repo covers
 
-## 📁 Repository Directory Structure
+### Device reconnaissance
 
-*   **/Recon** — Hardware architecture mapping, component tracking, BIOS/UEFI configurations, and OS baseline states.
-*   **/Stress-Tests** — Performance data, thermal throttling analysis, power consumption matrices, and bypass charging metrics.
-*   **/Audit-Findings** — Vulnerability tracking, bloatware/telemetry analysis, security compliance, and system hardening documentation.
+- hardware inventory and baseline mapping
+- BIOS and UEFI review
+- boot security and firmware posture
+- operating system baseline comparison
 
-## 🛡️ Audit Methodology & Protocols
+### Performance and stability analysis
 
-### 1. Device Reconnaissance (Passive & Active)
-*   Mapping hardware specifications directly via low-level system queries (avoiding marketing abstractions).
-*   Documenting firmware, BIOS configurations, and boot security status (Secure Boot, TPM modules).
+- thermal throttling observations
+- power draw and efficiency review
+- synthetic workload behavior
+- system responsiveness under sustained load
 
-### 2. Physical & Thermal Stress Analysis
-*   Monitoring thermal behavior under sustained synthetic workloads.
-*   Analyzing power distribution protocols, including efficiency under bypass charging conditions.
+### Security and hardening review
 
-### 3. System Hardening & Compliance
-*   Auditing OS baselines (e.g., Windows 11 Enterprise/Pro builds) against security benchmarks.
-*   Identifying and documenting potential telemetry vectors, unneeded services, and attack surfaces.
+- telemetry exposure and unnecessary background activity
+- service and configuration review
+- baseline drift analysis
+- compliance-minded hardening notes
 
----
+## Repository structure
 
-> **Disclaimer:** All audits, reconnaissance, and stress testing conducted within this repository are performed strictly for educational purposes in alignment with my Information Technology/Cybersecurity coursework. 
+- `/Recon` — hardware and system reconnaissance notes, configuration findings, and baseline data
+- `/Stress-Tests` — benchmarking, thermal, power, and workload analysis
+- `/Audit-Findings` — security observations, risk notes, and hardening recommendations
+- `/telemetry_dumps` — captured telemetry and system data for review and comparison
 
-**Lead Auditor:** [peter mburu ]  
-**Status:** `OPERATIONAL`
+## Why this exists
+
+Most hardware reviews stop at specs and benchmarks. This repo goes a bit further and asks a more useful question: what is this system really doing, how stable is it under load, and what security or privacy tradeoffs are baked in?
+
+This is useful for:
+
+- IT auditing work
+- security-focused system review
+- hardware benchmarking and baseline tracking
+- understanding how telemetry and software behavior affect trust in a device
+
+## Methodology
+
+The work here is guided by practical auditing principles:
+
+- measure before judging
+- document configuration and state clearly
+- compare expected behavior with observed behavior
+- log findings with evidence, not assumptions
+- treat hardening as a continuous process, not a one-time checklist
+
+## Scope and use
+
+This repository is for educational and lab use. It is intended for structured review of personal, lab, and test systems under controlled conditions.
+
+All activity in this repository is aligned with responsible testing practices, local compliance expectations, and ethical system review.
+
+## Status
+
+Operational
+
+## Lead
+
+Peter Mburu
