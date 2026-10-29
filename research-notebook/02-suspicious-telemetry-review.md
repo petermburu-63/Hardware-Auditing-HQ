@@ -32,4 +32,6 @@ The target system generates unexpected network or log activity. This review is i
 - compare against baseline
 - check service configuration
 - isolate or review the process
+
+- 
                 -LOWK RINSE AND REPEAT THE PROCESSS-
