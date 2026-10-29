@@ -1,46 +1,53 @@
-# Security Lab Guide
+# Project Blueprint
 
-This project is intentionally structured like a realistic security engineering workspace. It contains a mix of discovery tooling, defensive monitoring, and telemetry analysis so students can see how security work is segmented in practical environments.
+## Scope
 
-## Why the layout matters
+The goal of the project is to build a credible educational security lab with a clear separation of responsibilities and professional operational patterns.
 
-A serious security project is not one giant monolith. It is usually organized into clearly separated functions:
+## Team-like structure
 
-- offense and reconnaissance
-- defense and monitoring
-- analytics and telemetry review
-- documentation and operational guidance
+The repository is intentionally organized as if it were a small security engineering workspace with distinct responsibilities:
 
-This repo follows that pattern.
+- offense: discovery and reconnaissance
+- defense: monitoring and control logic
+- analytics: pattern interpretation and scoring
+- docs: architecture, guidance, and learning material
 
-## Example workflow
+## What a mature version would include
 
-```bash
-python3 cybersecurity-projects/offense/advanced_recon_suite.py --host 192.168.1.10 --ports 22,80,443,8080 --json
-python3 cybersecurity-projects/analytics/telemetry_analyzer.py --log /var/log/auth.log --json
-python3 cybersecurity-projects/defense/host_monitor.py --path /tmp/lab-monitor --interval 3 --iterations 5
-```
+- richer telemetry parsers
+- structured event schemas
+- risk-scoring pipelines
+- summary and appendix generation
+- baseline export and comparison reports
+- lab scenario documentation and walk-throughs
 
-## Professional standards
+## Current implementation
 
-The scripts in this repository are written to be readable and maintainable. They include:
+This repo already includes:
 
-- CLI configuration
-- clear argument parsing
-- structured data models
-- output for both humans and machines
-- educational lab notes and safety guidance
+- host and service discovery scripts
+- defensive monitoring utilities
+- risk calculation and telemetry analysis modules
+- architecture and guide documents
 
-## Operational mindset
+## Future extension roadmap
 
-The point is to understand the process behind security work:
+1. add richer threat-model examples
+2. add multi-source correlation workflows
+3. add report generation for findings and recommendations
+4. add secure configuration templates
+5. add educational exercises with expected outcomes
 
-- identify what is exposed
-- monitor what changes
-- detect abnormal patterns
-- interpret the results responsibly
-- propose realistic hardening steps
+## Standard for contributions
 
-## Safety reminder
+Any contribution should retain:
 
-All testing must be scoped to approved systems and lab infrastructure. The code is intentionally educational and should never be used beyond a controlled environment.
+- lab safety framing
+- realistic technical quality
+- clear documentation
+- responsible usage boundaries
+
+## Final principle
+
+The project is meant to feel professional, useful, and credible without crossing into dangerous or deceptive practices. It is educational engineering, not adversarial automation.
