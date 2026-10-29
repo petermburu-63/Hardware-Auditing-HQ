@@ -15,11 +15,14 @@ Use these files to document:
 - home-lab risk scenarios
 - hardening actions and follow-up checks
 - before-and-after comparisons
+- event correlation and interpretation
 
 ## Included sections
 
-- 01-device-baseline.md
-- 02-suspicious-telemetry-review.md
-- 03-home-lab-risk-scenario.md
-- 04-hardening-plan-template.md
-- 05-comparison-review-template.md
+- `01-device-baseline.md`
+- `02-suspicious-telemetry-review.md`
+- `03-home-lab-risk-scenario.md`
+- `04-hardening-plan-template.md`
+- `05-comparison-review-template.md`
+- `06-correlation-brief.md`
+- `07-observability-drilldown.md`

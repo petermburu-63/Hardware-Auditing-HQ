@@ -23,5 +23,6 @@ That is why the project includes:
 - telemetry analysis and risk framing
 - architecture and project documentation
 - a research notebook for deeper study and comparison
+- local tools for provenance and traceability in the lab
 
 This is a workspace for learning, investigation, and responsible technical curiosity.

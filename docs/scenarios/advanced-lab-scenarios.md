@@ -37,3 +37,11 @@ A low-cost device or embedded endpoint exposes a surprisingly broad surface area
 ## Scenario 5: hardening after evidence
 
 After reviewing logs and telemetry, a package of changes is proposed. The outcome should be measured after deployment to determine whether risk reduced, drift flattened, or new issues became visible.
+
+## Scenario 6: false-positive review
+
+Some alerts look serious but are actually harmless process noise. The review should establish which signals are real, which are pattern matching artifacts, and which require additional verification.
+
+## Scenario 7: multi-host correlation
+
+A cluster of machines begins to show similar suspicious behaviors. The task is to review whether there is a shared startup script, package change, or OS configuration issue causing the pattern across devices.
