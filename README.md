@@ -31,10 +31,10 @@ I use this space to document device reconnaissance, performance behavior, therma
 
 ## Repository structure
 
-- `/Recon` — hardware and system reconnaissance notes, configuration findings, and baseline data
-- `/Stress-Tests` — benchmarking, thermal, power, and workload analysis
-- `/Audit-Findings` — security observations, risk notes, and hardening recommendations
-- `/telemetry_dumps` — captured telemetry and system data for review and comparison
+- `/Recon` = hardware and system reconnaissance notes, configuration findings, and baseline data
+- `/Stress-Tests` = benchmarking, thermal, power, and workload analysis
+- `/Audit-Findings` = security observations, risk notes, and hardening recommendations
+- `/telemetry_dumps` = captured telemetry and system data for review and comparison
 
 ## Why this exists
 
@@ -67,8 +67,10 @@ All activity in this repository is aligned with responsible testing practices, l
 
 under-review
 
-## Lead
+## WRITER 
 
 Peter Mburu
-                  AS I ALWAYS SAY GITGUD
+
+
+                  -AS I ALWAYS SAY GITGUD-
                   
