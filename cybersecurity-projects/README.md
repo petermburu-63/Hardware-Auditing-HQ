@@ -44,7 +44,9 @@ cybersecurity-projects/
 │   ├── README.md
 │   ├── ARCHITECTURE.md
 │   ├── PROJECT_BLUEPRINT.md
-│   └── SECURITY_LAB_GUIDE.md
+│   ├── SECURITY_LAB_GUIDE.md
+│   └── scenarios/
+│       └── advanced-lab-scenarios.md
 └── telemetry/
 ```
 
@@ -91,3 +93,11 @@ python3 cybersecurity-projects/offense/advanced_service_mapper.py --host 192.168
 python3 cybersecurity-projects/analytics/risk_index.py --events telemetry/example-events.json
 python3 cybersecurity-projects/defense/host_guard.py --path /tmp/lab-monitor --interval 5 --iterations 3
 ```
+
+## Research notebook
+
+The project includes a research notebook for deeper case studies and investigations:
+
+- research-notebook/
+
+This notebook is meant for personal lab notes, comparison reviews, telemetry observations, and advanced scenario capture.

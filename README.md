@@ -24,21 +24,60 @@ Most audit work stops at specs, thermal numbers, and generic recommendations. Th
 - how does a system drift from its secure baseline?
 - what evidence supports a hardening recommendation?
 
-## Operating model
+This repository was created to make those questions visible, structured, and repeatable. It is a research and learning archive for understanding how a system behaves in practice, not just how it is marketed to be used.
 
-The repository uses a simple professional model:
+## Research notebook section
 
-- measure before judging
-- document configuration and state clearly
-- compare expected behavior with observed behavior
-- treat findings as evidence, not assumptions
-- frame hardening as an iterative process
+The repository now includes a dedicated research notebook for structured technical journaling and scenario capture:
+
+- research-notebook/README.md
+- research-notebook/01-device-baseline.md
+- research-notebook/02-suspicious-telemetry-review.md
+- research-notebook/03-home-lab-risk-scenario.md
+- research-notebook/04-hardening-plan-template.md
+- research-notebook/05-comparison-review-template.md
+
+This notebook is intended to support deeper analysis, lab notes, and repeatable investigation patterns.
+
+## Advanced scenario library
+
+The repo also contains deeper operational scenario documentation for realistic lab conditions:
+
+- docs/scenarios/advanced-lab-scenarios.md
+- docs/WHY_I_MADE_ALL_THIS.md
+- docs/ARCHITECTURE.md
+- docs/PROJECT_BLUEPRINT.md
+- docs/SECURITY_LAB_GUIDE.md
+
+## .env file overview
+
+A .env file is a local configuration file that stores environment variables for an application or script. It is commonly used for values such as API keys, ports, database connection strings, feature flags, or local test config.
+
+Example:
+
+```env
+APP_NAME=hardware-audit-hq
+DEBUG=true
+PORT=8000
+API_TOKEN=replace-me
+```
+
+Important notes:
+
+- a .env file is usually local to a machine and should not be committed to source control
+- real secrets should live in a secure secret manager or a local untracked .env file
+- a repo can include a .env.example file to show the expected variables without exposing the actual values
+
+This repo includes a safe example template:
+
+- .env.example
 
 ## Repository architecture
 
 ```text
 Hardware-Auditing-HQ/
 ├── README.md
+├── .env.example
 ├── LICENSE
 ├── cybersecurity-projects/
 │   ├── README.md
@@ -69,11 +108,21 @@ Hardware-Auditing-HQ/
 │   │   ├── README.md
 │   │   ├── ARCHITECTURE.md
 │   │   ├── PROJECT_BLUEPRINT.md
-│   │   └── SECURITY_LAB_GUIDE.md
+│   │   ├── SECURITY_LAB_GUIDE.md
+│   │   └── scenarios/
+│   │       └── advanced-lab-scenarios.md
 │   └── requirements.txt
+├── research-notebook/
+│   ├── README.md
+│   ├── 01-device-baseline.md
+│   ├── 02-suspicious-telemetry-review.md
+│   ├── 03-home-lab-risk-scenario.md
+│   ├── 04-hardening-plan-template.md
+│   └── 05-comparison-review-template.md
 ├── telemetry_dumps/
 ├── notes/
 └── docs/
+    ├── WHY_I_MADE_ALL_THIS.md
     └── system-review-template.md
 ```
 
@@ -115,16 +164,6 @@ Do not run the scripts here against systems you do not own or do not have explic
 3. Monitor file and system changes
 4. Correlate findings into a structured risk narrative
 5. Recommend concrete hardening actions with evidence
-
-## Professional engineering posture
-
-The codebase is intentionally organized to look and behave like a credible cybersecurity engineering workspace. This includes:
-
-- clear module boundaries
-- CLI-driven utilities
-- structured data models
-- output suitable for both human review and automation
-- explicit operational safety notes
 
 ## Writer
 
