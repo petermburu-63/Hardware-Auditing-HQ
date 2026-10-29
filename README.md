@@ -1,76 +1,100 @@
-# Hardware-Audit-HQ
+# Hardware Audit HQ
 
-A practical lab for auditing hardware, software posture, telemetry exposure, and system hardening across consumer and enterprise devices.
+A professional lab repository for measuring device posture, telemetry exposure, and system hardening across consumer and enterprise hardware.
 
-This repository is built around one idea: if a device is going to be trusted in a real environment, it should be measured, documented, and tested with a critical eye.
+## Mission
 
-I use this space to document device reconnaissance, performance behavior, thermal characteristics, firmware posture, telemetry risk, and hardening opportunities. The goal is to move beyond marketing specs and look at what the hardware and operating system are actually doing.
+Hardware Audit HQ exists to combine practical hardware review, software behavior analysis, and security-minded system auditing into one structured workspace. The goal is to understand what a device is really doing in context, not just what the marketing material says it should do.
 
-## What this repo covers
+## Core areas
 
-### Device reconnaissance
-
+### 1. Device reconnaissance
 - hardware inventory and baseline mapping
-- BIOS and UEFI review
-- boot security and firmware posture
+- BIOS / firmware posture review
+- boot configuration and platform trust review
 - operating system baseline comparison
 
-### Performance and stability analysis
+### 2. Performance and stability review
+- thermal and power behavior under load
+- responsiveness and throttling analysis
+- synthetic workload characterization
+- reliability and drift tracking over time
 
-- thermal throttling observations
-- power draw and efficiency review
-- synthetic workload behavior
-- system responsiveness under sustained load
-
-### Security and hardening review
-
-- telemetry exposure and unnecessary background activity
-- service and configuration review
-- baseline drift analysis
-- compliance-minded hardening notes
+### 3. Security and hardening review
+- service exposure and telemetry review
+- configuration drift analysis
+- risk-oriented notes and remediation guidance
+- structured comparison against best-practice baselines
 
 ## Repository structure
 
-- `/Recon` = hardware and system reconnaissance notes, configuration findings, and baseline data
-- `/Stress-Tests` = benchmarking, thermal, power, and workload analysis
-- `/Audit-Findings` = security observations, risk notes, and hardening recommendations
-- `/telemetry_dumps` = captured telemetry and system data for review and comparison
-
-## Why this exists
-
-Most hardware reviews stop at specs and benchmarks. This repo goes a bit further and asks a more useful question: what is this system really doing, how stable is it under load, and what security or privacy tradeoffs are baked in?
-
-This is useful for:
-
-- IT auditing work
-- security-focused system review
-- hardware benchmarking and baseline tracking
-- understanding how telemetry and software behavior affect trust in a device
+```text
+Hardware-Auditing-HQ/
+├── README.md
+├── LICENSE
+├── cybersecurity-projects/
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── offense/
+│   │   ├── 01_port_scanner.py
+│   │   ├── 02_packet_sniffer.py
+│   │   ├── 03_hash_cracker.py
+│   │   ├── 08_vuln_scanner.py
+│   │   ├── advanced_recon_suite.py
+│   │   └── README.md
+│   ├── defense/
+│   │   ├── 04_hids.py
+│   │   ├── 05_honeypot.py
+│   │   ├── 06_phishing_detector.py
+│   │   ├── 07_file_integrity_monitor.py
+│   │   ├── 09_mini_siem.py
+│   │   ├── 10_encrypted_vault.py
+│   │   ├── README.md
+│   │   └── host_monitor.py
+│   ├── docs/
+│   │   ├── README.md
+│   │   └── SECURITY_LAB_GUIDE.md
+│   └── analytics/
+│       └── telemetry_analyzer.py
+├── telemetry_dumps/
+└── notes/
+```
 
 ## Methodology
 
-The work here is guided by practical auditing principles:
+The work in this repo follows a measurement-first approach:
 
 - measure before judging
 - document configuration and state clearly
 - compare expected behavior with observed behavior
-- log findings with evidence, not assumptions
-- treat hardening as a continuous process, not a one-time checklist
+- record findings with evidence, not assumptions
+- treat hardening as a continuous process
 
-## Scope and use
+## Ethical use and scope
 
-This repository is for educational and lab use. It is intended for structured review of personal, lab, and test systems under controlled conditions.
+This repository is intended for:
 
-All activity in this repository is aligned with responsible testing practices, local compliance expectations, and ethical system review.
+- personal lab environments
+- authorized testing scenarios
+- educational analysis
+- controlled home-lab or enterprise demo environments
 
-## Status
+Do not run the scripts here against systems you do not own or do not have explicit permission to test.
 
-under-review
+## Learning flow
 
-## WRITER 
+1. Reconnaissance and service discovery
+2. Baseline security telemetry review
+3. Defensive monitoring and change tracking
+4. Device and host-level risk interpretation
+5. Hardening recommendations and evidence-based reporting
+
+## Operational stance
+
+This project is built to look and function like a serious security engineering workspace, but it remains educational, evidence-focused, and safe by design.
+
+## Writer
 
 Peter Mburu
 
-
-                  -AS I ALWAYS SAY GITGUD-
-                  
+- AS I ALWAYS SAY GITGOOD -

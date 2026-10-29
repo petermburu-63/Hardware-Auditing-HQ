@@ -1,64 +1,55 @@
 # Cybersecurity Projects
 
-A hands-on collection of security labs designed to teach the same ideas used in real-world security engineering: discovery, monitoring, defense, correlation, and protection.
+This folder contains a structured collection of security engineering exercises designed to teach the mechanics of discovery, monitoring, and defensive analysis in a realistic lab environment.
 
-This stack is built for two audiences:
-- Technical people who want the actual code and logic.
-- Non-technical readers who want a clear, plain-English explanation of what each lab is doing and why it matters.
+## The idea
 
-## The core idea
-
-Each project is an intentionally small, understandable security tool. Together they form a practical learning path from reconnaissance to detection to protection.
+Each project is intentionally small but realistic. Together they form a practical progression from reconnaissance to detection to defense. The work is meant to be clear enough for students while still closely resembling the shapes and structure of professional tooling.
 
 ## How to read this repo
 
-- Offense: projects that model how attackers or security researchers discover systems and weaknesses.
-- Defense: projects that monitor, detect, trap, and protect systems.
-- Analytics: projects that interpret patterns and classify risk.
-- Docs: explanations written to make the work approachable without losing technical depth.
+- Offense: discovery, fingerprinting, scanning, and service interrogation
+- Defense: monitoring, integrity tracking, alerting, and response logic
+- Analytics: telemetry review, pattern interpretation, and operational reporting
+- Docs: explanation and walkthrough material for safe learning
 
-## Quick safety note
+## Safety and ethics
 
-Only test systems you own or have explicit permission to test. These scripts are educational and should be run in controlled lab environments such as a home lab, a VM, or a legal training platform.
+Only test systems you own or are explicitly authorized to assess. Use these scripts in a controlled lab, personal network, or training environment.
 
 ## Project categories
 
 ### Offense
-
-- Recon and discovery
-- Network scanning
-- Service fingerprinting
-- Hash cracking exercises
-- Vulnerability lookups
+- port scanning and banner collection
+- packet inspection and anomaly review
+- hash analysis and password-policy exercises
+- service and vulnerability lookup workflows
 
 ### Defense
-
-- HIDS monitoring
-- File integrity checks
-- Honeypots
-- SIEM-style correlation
-- Encryption and safe storage
+- host-based detection rules
+- file integrity monitoring
+- honeypot-style deception patterns
+- SIEM-style event correlation
+- encrypted vault and secure storage patterns
 
 ### Analytics
-
-- Phishing detection using a lightweight ML model
-- Pattern recognition over suspicious activity
+- suspicious activity summaries
+- log normalization and alerting heuristics
+- telemetry trend review
+- operational reporting workflows
 
 ### Docs
-
-- Plain-English project explainers
-- Milestone walkthroughs
-- Safety and usage notes
+- explainers and project walkthroughs
+- lab safety and usage notes
+- best-practice operational framing
 
 ## Suggested learning order
 
-1. Recon: port scanning and packet analysis
-2. Baseline defense: file integrity monitoring
-3. Brute-force detection: HIDS
-4. SIEM logic: log correlation
-5. ML and phishing detection
-6. Vulnerability lookups and scanning
-7. Encryption and protected storage
+1. Reconnaissance and service discovery
+2. Traffic and packet review
+3. Defensive correlation and alerting
+4. Telemetry review and suspicious-pattern analysis
+5. Risk framing and reporting
 
 ## Requirements
 
@@ -70,20 +61,8 @@ pip install -r requirements.txt
 
 ## Repository footprint
 
-- `offense/` = offensive and reconnaissance-oriented projects
-- `defense/` = defensive and monitoring projects
-- `analytics/` = ML and risk classification projects
-- `docs/` = security explainers and project notes
-- `requirements.txt` = Python dependencies
-
-## Who this is for
-
-This repo is ideal for:
-- students learning security fundamentals
-- developers who want to understand how attacks and defense work in practice
-- IT/security hobbyists building a lab in a safe environment
-- anyone curious about how modern security tooling actually works
-
-## Important framing
-
-These projects are not meant to be malicious automation. They are intentionally designed to teach understanding, detection, and defense. The most valuable skill in cybersecurity is not brute-force access, it is the ability to reason clearly about risk, systems, and controls.
+- offense/: offensive and reconnaissance-oriented tools
+- defense/: defensive monitoring and protection scripts
+- analytics/: telemetry parsing and suspicious activity detection
+- docs/: guides and architectural notes
+- requirements.txt: dependency list for the lab stack
