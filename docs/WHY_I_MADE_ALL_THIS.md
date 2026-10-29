@@ -30,6 +30,6 @@ This is a workspace for learning, investigation, and responsible technical curio
  "TL;DR" 
  THIS IS TO SERVE AS ALL IN ONE GUIDE FOR NEW STUDENTS AS WELL AS A HANDBOOK TO USE WHEN DOING INDIVIDUAL STUDY CASES.........etc
 
- HENCE     ALWAYS AIM TO GIT GOOD AND NEVER LARP 
+ HENCE     ALWAYS AIM TO GITGOOD AND NEVER LARP 
  
  
