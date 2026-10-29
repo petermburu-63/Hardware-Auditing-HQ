@@ -1,18 +1,18 @@
 # Cybersecurity Projects
 
-This project area is structured as a practical security engineering workspace. It combines discovery, defensive monitoring, and telemetry analysis into a coherent training model for students, lab users, and security-minded engineers.
+This project area is a structured security engineering workspace designed to teach realistic operational techniques while staying within a controlled, ethical, and lab-safe scope.
 
-## Project objectives
+## Project goals
 
-The repository covers five major operating themes:
+The repository covers several major domains:
 
 1. Reconnaissance and service discovery
-2. Behavioral and network-level anomaly review
-3. Defensive monitoring and change tracking
+2. Behavioral and network anomaly review
+3. Defensive monitoring and integrity tracking
 4. Telemetry correlation and risk detection
-5. Evidence-driven reporting and hardening guidance
+5. Evidence-based reporting and hardening guidance
 
-## Repository map
+## Repository flow
 
 ```text
 cybersecurity-projects/
@@ -44,19 +44,22 @@ cybersecurity-projects/
 │   ├── README.md
 │   ├── ARCHITECTURE.md
 │   ├── PROJECT_BLUEPRINT.md
+│   ├── PROJECT_ROADMAP.md
 │   ├── SECURITY_LAB_GUIDE.md
 │   └── scenarios/
 │       └── advanced-lab-scenarios.md
 └── telemetry/
 ```
 
-## Design principles
+## Why these tools matter
 
-- Clear separation between offense, defense, and analytics
-- Reusable CLI structure across project scripts
-- Honest educational framing and safety notes
-- Realistic but lab-safe security tool patterns
-- Output designed for reporting and automation
+These scripts are useful because they demonstrate the real patterns behind operational security work:
+
+- discovery and exposure review
+- telemetry signal classification
+- baseline monitoring and change detection
+- risk summary and documentation
+- evidence-driven remediation recommendations
 
 ## Learning flow
 
@@ -68,20 +71,16 @@ cybersecurity-projects/
 
 ## Research notebook
 
-The project includes a research notebook for deeper case studies and investigations:
-
-- `research-notebook/`
-
-This notebook is meant for personal lab notes, comparison reviews, telemetry observations, and advanced scenario capture.
+The workspace also includes a research notebook for deeper case analysis and journaling.
 
 ## Safety and responsibility
 
-The scripts in this section are intended for:
+The scripts here are intended for:
 
-- controlled lab systems
-- private test environments
-- authorized internal review
-- educational demos
+- private lab systems
+- controlled review environments
+- educational and training use
+- authorized internal testing
 
 They are not intended for outside or unauthorized use.
 

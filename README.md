@@ -1,41 +1,38 @@
 # Hardware Audit HQ
 
-Hardware Audit HQ is a structured research and engineering archive for understanding what a device, host, or environment is really doing beyond the marketing copy and vendor summaries.
+Hardware Audit HQ is a structured security and systems research workspace focused on evidence-based device review, telemetry analysis, operational drift, and responsible hardening.
 
-## Why this project exists
+## Why this repo exists
 
-This repo was built to answer a practical question: what is a system actually doing, and how do we prove it?
+This repository was built to turn technical curiosity into a disciplined lab workflow. The goal is to document what a machine is actually doing, not just what the product page claims.
 
-The project combines:
+The project answers questions like:
 
-- hardware baseline review
-- software and firmware posture assessment
-- telemetry and log review
-- defensive monitoring practices
-- evidence-driven security hardening
-- controlled lab and research workflows
+- What services are actually exposed?
+- What is collecting telemetry or generating unexpected network behavior?
+- What changes over time indicate drift, noise, or real risk?
+- Which findings are grounded in evidence and which are just assumptions?
+- What hardening actions make sense after a measured review?
 
-The idea is simple: measure first, document clearly, compare honestly, and harden with evidence instead of guesswork.
+It is meant to be a serious research and learning environment for:
 
-## Research notebook and lab methodology
+- device auditing
+- security lab work
+- telemetry interpretation
+- home-lab and internal review
+- structured technical note-taking
 
-The repo is intentionally organized like a serious lab environment, not a random dump of notes. It includes:
+## What makes it strong
 
-- a structured research notebook
-- operational scenarios and walkthroughs
-- architecture and blueprint docs
-- defensive and analytics tooling
-- a local environment template for safe development and testing
+This project is already structured like a credible engineering workspace:
 
-## Project index
-
-- `README.md` — project mission and overview
-- `cybersecurity-projects/README.md` — engineering and lab structure
-- `docs/PROJECT_INDEX.md` — architecture and navigation guide
-- `docs/WHY_I_MADE_ALL_THIS.md` — rationale and project intent
-- `research-notebook/README.md` — investigation tracker and note system
-- `tools/README.md` — local tooling and anti-copying signature utilities
-- `.env.example` — sample local environment config
+- clear separation between offense, defense, and analytics
+- reusable CLI tools and structured scripting patterns
+- architecture and blueprint documentation
+- research notebook and incident timeline entries
+- append-only evidence style notes
+- clean safety and ethics framing
+- practical examples for local lab usage
 
 ## Repository structure
 
@@ -43,6 +40,7 @@ The repo is intentionally organized like a serious lab environment, not a random
 Hardware-Auditing-HQ/
 ├── README.md
 ├── .env.example
+├── .gitignore
 ├── LICENSE
 ├── cybersecurity-projects/
 │   ├── README.md
@@ -74,6 +72,7 @@ Hardware-Auditing-HQ/
 │   │   ├── ARCHITECTURE.md
 │   │   ├── PROJECT_BLUEPRINT.md
 │   │   ├── SECURITY_LAB_GUIDE.md
+│   │   ├── PROJECT_ROADMAP.md
 │   │   └── scenarios/
 │   │       └── advanced-lab-scenarios.md
 │   └── requirements.txt
@@ -85,9 +84,11 @@ Hardware-Auditing-HQ/
 │   ├── 04-hardening-plan-template.md
 │   ├── 05-comparison-review-template.md
 │   ├── 06-correlation-brief.md
-│   └── 07-observability-drilldown.md
-├── telemetry_dumps/
+│   ├── 07-observability-drilldown.md
+│   └── 08-case-study-summary.md
 ├── notes/
+│   └── README.md
+├── telemetry_dumps/
 ├── tools/
 │   ├── README.md
 │   └── repo_signature.py
@@ -95,57 +96,67 @@ Hardware-Auditing-HQ/
 │   ├── WHY_I_MADE_ALL_THIS.md
 │   ├── PROJECT_INDEX.md
 │   ├── RESEARCH_NOTEBOOK_INDEX.md
+│   ├── RESEARCH_METHODOLOGY.md
 │   ├── system-review-template.md
+│   ├── CASE_STUDIES/
+│   │   ├── 01-home-lab-incident.md
+│   │   └── 02-edge-device-review.md
 │   └── scenarios/
 │       └── advanced-lab-scenarios.md
 └── LICENSE
 ```
 
-## Research notebook and deeper scenario coverage
+## Research and review domains
 
-The repo contains a growing set of technical notebooks and scenarios for:
+### Device reconnaissance
+- hardware inventory review
+- firmware and BIOS posture review
+- boot-time security posture
+- OS baseline review and drift tracking
 
-- baseline investigations
-- suspicious telemetry review
-- home-lab risk scenarios
-- hardening plan templates
-- correlating findings and validating hypotheses
-- observability drilldowns for telemetry artifacts
+### Performance and stability review
+- thermal and power behavior under load
+- responsiveness and throttling review
+- benchmark comparison and reaction to stress
+- reliability and drift tracking over time
 
-## What is a .env file?
+### Security and hardening review
+- service exposure audit
+- telemetry and background activity review
+- configuration drift analysis
+- evidence-backed hardening recommendations
 
-A `.env` file is a local environment configuration file used to store runtime variables such as:
+## Methods
 
-- ports
-- API keys
-- database URLs
-- debug flags
-- feature toggles
+The project favors a practical, repeatable auditing process:
 
-This is usually kept local and uncommitted because it often contains secrets. The repo includes a safe template at `.env.example` to show expected variables without exposing real values.
+1. baseline the target system
+2. observe and collect evidence
+3. compare against expected behavior
+4. classify anomalies and patterns
+5. document risk and remediation steps
+6. verify the result after changes
 
-## Local anti-copying / signature tooling
+## Safety and ethics
 
-This repo also includes a lightweight local signature tool under `tools/repo_signature.py`. It adds a harmless, creative watermark banner to generated notes or project artifacts so the source provenance is visible in the lab environment.
-
-This is not a malicious tool. It is simply a practical, low-stakes provenance marker for internal research, documentation, and lab tracking.
-
-Example behavior:
-
-- prints a repo banner
-- marks generated artifacts with a project signature
-- helps preserve traceability during local lab review
-
-## Ethical use
-
-This repository is for:
+This repository is intended for:
 
 - personal lab environments
-- authorized research and testing
-- educational projects
-- controlled home-lab and internal review
+- authorized internal testing
+- educational and research use
+- controlled demo environments
 
-Do not run the tooling here against systems you do not own or do not have explicit permission to test.
+Do not run these tools against systems you do not own or do not have explicit written permission to test.
+
+## .env usage
+
+A `.env` file is a local environment configuration file used to store runtime values such as ports, API keys, database URIs, and feature flags. It is usually not committed, because it can contain secrets.
+
+This repo includes a safe example at `.env.example`.
+
+## Local provenance tooling
+
+The repo also includes a harmless provenance/stamp tool in `tools/repo_signature.py`. It can add a local signature banner to generated notes or lab artifacts so they are clearly traceable to this project and its author.
 
 ## Writer
 
