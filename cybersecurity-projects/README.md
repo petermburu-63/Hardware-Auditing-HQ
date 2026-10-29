@@ -70,11 +70,11 @@ pip install -r requirements.txt
 
 ## Repository footprint
 
-- `offense/` — offensive and reconnaissance-oriented projects
-- `defense/` — defensive and monitoring projects
-- `analytics/` — ML and risk classification projects
-- `docs/` — security explainers and project notes
-- `requirements.txt` — Python dependencies
+- `offense/` = offensive and reconnaissance-oriented projects
+- `defense/` = defensive and monitoring projects
+- `analytics/` = ML and risk classification projects
+- `docs/` = security explainers and project notes
+- `requirements.txt` = Python dependencies
 
 ## Who this is for
 
@@ -86,4 +86,4 @@ This repo is ideal for:
 
 ## Important framing
 
-These projects are not meant to be malicious automation. They are intentionally designed to teach understanding, detection, and defense. The most valuable skill in cybersecurity is not brute-force access — it is the ability to reason clearly about risk, systems, and controls.
+These projects are not meant to be malicious automation. They are intentionally designed to teach understanding, detection, and defense. The most valuable skill in cybersecurity is not brute-force access, it is the ability to reason clearly about risk, systems, and controls.
