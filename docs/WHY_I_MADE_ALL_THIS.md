@@ -26,3 +26,10 @@ That is why the project includes:
 - local tools for provenance and traceability in the lab
 
 This is a workspace for learning, investigation, and responsible technical curiosity.
+
+ "TL;DR" 
+ THIS IS TO SERVE AS ALL IN ONE GUIDE FOR NEW STUDENTS AS WELL AS A HANDBOOK TO USE WHEN DOING INDIVIDUAL STUDY CASES.........etc
+
+ HENCE     ALWAYS AIM TO GIT GOOD AND NEVER LARP 
+ 
+ 
