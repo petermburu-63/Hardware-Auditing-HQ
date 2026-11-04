@@ -1,4 +1,4 @@
-# 📊 Telemetry Dumps – A Beginner's Guide
+# 📊 Telemetry Dumps = A Beginner's Guide
 
 Welcome! If you're new to cybersecurity, these log files might look like alien text. Let's break them down into plain English.
 
@@ -157,11 +157,11 @@ This repo shows a **cascade of failures**:
 
 ## 📚 Why These Logs Are Good for Learning
 
-✅ **They're realistic** – These incidents happen in real production systems  
-✅ **They show interdependencies** – When one layer fails, everything else feels it  
-✅ **They teach defensive practices** – Rate limiting, connection limits, fail2ban, memory monitoring  
-✅ **They're escalating** – Shows how small problems become big ones  
-✅ **The last one's fun** – Reminds you that chaos can be funny (but expensive in production)
+✅ **They're realistic** = These incidents happen in real production systems  
+✅ **They show interdependencies** = When one layer fails, everything else feels it  
+✅ **They teach defensive practices** = Rate limiting, connection limits, fail2ban, memory monitoring  
+✅ **They're escalating** = Shows how small problems become big ones  
+✅ **The last one's fun** = Reminds you that chaos can be funny (but expensive in production)
 
 ---
 
@@ -178,13 +178,13 @@ This repo shows a **cascade of failures**:
 ## 💡 One More Thing
 
 If you're studying cybersec:
-- **These logs teach you what defenders are looking for** – attackers try SSH brute-force, flooding, resource exhaustion
-- **They teach you what goes wrong when systems are under attack** – cascading failures, loss of availability
+- **These logs teach you what defenders are looking for** =attackers try SSH brute-force, flooding, resource exhaustion
+- **They teach you what goes wrong when systems are under attack** = cascading failures, loss of availability
 - **They're a reminder:** security ≠ just blocking hackers; it's also about **resilience** (keeping systems up even when bad things happen)
 
 ---
 
-**Good luck with your studies!** 🚀
+**Good luck lads and lasses
 
 ---
 
