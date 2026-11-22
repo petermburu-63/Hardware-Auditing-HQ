@@ -7,7 +7,7 @@ A security and systems research workspace for structured device reviews, telemet
 ## At a glance
 
 - **Focus:** device baselines, telemetry, configuration drift, and defensive recommendations
-- **Includes:** Python lab exercises, research notes, case studies, templates, and architecture documentation
+- **Includes:** Python lab exercises, research notes, case studies, templates, architecture documentation, and a Secure Boot auditor project brief
 - **Audience:** learners and practitioners building a careful, repeatable home-lab or internal-review workflow
 
 ## Contents
@@ -16,7 +16,8 @@ A security and systems research workspace for structured device reviews, telemet
 | --- | --- |
 | [`cybersecurity-projects/`](cybersecurity-projects/) | Python exercises grouped into discovery, defense, and analytics |
 | [`research-notebook/`](research-notebook/) | Baseline, investigation, and review notes |
-| [`docs/`](docs/) | Project index, methodology, scenarios, and case studies |
+| [`docs/`](docs/) | Project indexes, methodology, scenarios, case studies, and project briefs |
+| [`docs/projects/SecureBoot-Cert-Auditor/`](docs/projects/SecureBoot-Cert-Auditor/README.md) | Secure Boot Certificate Auditor project brief; implementation status is stated in the brief |
 | [`telemetry_dumps/`](telemetry_dumps/) | Example telemetry and reference material; inspect and sanitize before sharing |
 | [`notes/`](notes/) | Informal observations to develop into documented findings |
 | [`tools/`](tools/) | Small local project utilities |
@@ -32,13 +33,17 @@ Start with the [project index](docs/PROJECT_INDEX.md), [research methodology](do
 5. **Recommend proportionately:** Prioritize practical, reversible hardening actions.
 6. **Verify and report:** Re-check changes and summarize outcomes without exposing sensitive data.
 
+## Secure Boot Certificate Auditor
+
+This repository includes a [project brief](docs/projects/SecureBoot-Cert-Auditor/README.md) for a read-only PowerShell auditor that is intended to inspect UEFI Secure Boot certificate state and produce JSON / HTML reports. The brief distinguishes reported implementation status from work still awaiting live-hardware and Windows validation. Check the actual source and current Microsoft/OEM guidance before relying on the tool or its findings.
+
 ## Set up
 
 Requires Python 3. Create a virtual environment and install the project dependencies:
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
 python -m pip install --upgrade pip
 python -m pip install -r cybersecurity-projects/requirements.txt
 ```
@@ -54,7 +59,7 @@ Review the documentation and each exercise's options before use. Some exercises 
 │   ├── defense/         # Monitoring and defensive exercises
 │   ├── docs/            # Architecture, guides, and scenarios
 │   └── offense/         # Authorized discovery exercises
-├── docs/                # Indexes, methodology, and case studies
+├── docs/                # Indexes, methodology, case studies, project briefs
 ├── notes/               # Working observations
 ├── research-notebook/   # Structured research entries and templates
 ├── telemetry_dumps/     # Example data and reference material
